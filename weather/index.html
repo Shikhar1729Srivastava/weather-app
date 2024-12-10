@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font style  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Oleo+Script:wght@400;700&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="julee-regular">
+    <div class="container">
+
+  
+<div class="main">
+
+    
+    <div id="search">
+        <input id="input_city" type="text" placeholder="enter the city name">
+        <button id="search_button">search</button>
+    </div>
+    <div class="sep"></div>
+    <div id="city_desh">
+        <span id="city_name">City Name</span>
+        <span id="desh_name">desh</span>
+    </div> 
+    <div class="sep"></div>
+    <div id="long_lat">
+        <div  class="updown">
+            <span class="attribute_name dark" >Longitude</span>
+              <span class="attri_value "  id="long"></span>
+        </div>
+        <div class="updown">
+            <span class="attribute_name dark">Latitude</span>
+              <span class="attri_value"  id="lat"></span> 
+        </div>      
+    </div>
+    <div class="sep"></div>
+    <div id="temperature">temperature</div>
+
+    <div class="sep"></div>
+
+    <div id="icon_desc">
+       <div id="icon">
+        <img src="weather_icon.png" alt="icon" id="iocnimg" class="icon_size">
+       </div>
+    <div class="sep"></div>   
+       <div id="description">description</div>
+    </div>
+
+    <div id="info">
+      <div class="sep"></div>
+        <div class="adj_attri">
+          <span class="attribute_name">cloud</span>
+          <span class="icon_style"><i class="fa-solid fa-cloud"></i></span>
+          <span class="attri_value"  id="cloud">%</span>
+        </div>
+        <div class="sep"></div>
+        <div class="adj_attri">
+          <span class="attribute_name">humidity</span>
+          <span class="icon_style"><i class="fas fa-water"></i></span>
+          <span class="attri_value"  id="humidity">%</span>
+        </div>
+        <div class="sep"></div>
+        <div class="adj_attri">
+          <span class="attribute_name">visibility</span>
+          <span class="icon_style"><i class="fa-solid fa-eye"></i></span>
+          <span class="attri_value"  id="visibility">meter</span>
+        </div>
+        <div class="sep"></div>
+        <div class="adj_attri">
+          <span class="attribute_name">wind speed</span>
+          <span class="icon_style"><i class="fa-solid fa-wind"></i></span>
+          <span class="attri_value"  id="wind_speed">Km/sec</span>
+        </div>
+        <div class="sep"></div>
+    </div>
+</div>
+
+</div>
+<script src="script.js"></script>    
+</body>
+</html>
+<!-- 
+<i class="fas fa-fog"></i>
+-->
